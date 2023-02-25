@@ -1,0 +1,119 @@
+@use 'src/theming/mx';
+
+button {
+  @include mx.my-normalize-button;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 500;
+  color: var(--my-color-default-white);
+  background-color: var(--my-color-primary);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  cursor: default;
+
+  &.large {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    padding: 1rem 2rem;
+  }
+
+  &.x-large {
+    font-size: 5rem;
+    line-height: 5rem;
+    padding: 2rem 4rem;
+  }
+
+  &.icon-only {
+    padding: 1rem;
+  }
+
+  &.shadow {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+
+  &:disabled {
+    background-color: var(--my-color-primary-light);
+  }
+
+  &:enabled:hover {
+    background-color: var(--my-color-primary-dark);
+    cursor: pointer;
+  }
+}
+
+.success {
+  background-color: var(--my-success);
+
+  &:disabled {
+    background-color: var(--my-success-light);
+  }
+
+  &:enabled:hover {
+    background-color: var(--my-success-dark);
+  }
+}
+
+.danger {
+  background-color: var(--my-error);
+
+  &:disabled {
+    background-color: var(--my-error-light);
+  }
+
+  &:enabled:hover {
+    background-color: var(--my-error-dark);
+  }
+}
+
+.plain {
+  padding: 0;
+  background-color: transparent;
+  color: var(--my-font-color-default);
+
+  &.large {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    padding: 0;
+  }
+
+  &:disabled {
+    background-color: transparent;
+  }
+
+  &:enabled:hover {
+    background-color: transparent;
+    color: var(--my-color-primary);
+  }
+}
+
+.header {
+  background-color: var(--my-neutral-100);
+  color: var(--my-color-primary);
+
+  &:disabled {
+    background-color: var(--my-neutral-100);
+  }
+
+  &:enabled:hover {
+    background-color: var(--my-neutral-200);
+    color: var(--my-color-primary-dark);
+  }
+}
+
+.rounded {
+  border-radius: 50%;
+  aspect-ratio: 1;
+  padding: 0.5rem 1rem;
+}
+
+.image {
+  width: 5rem;
+  height: 5rem;
+
+  img {
+    width: inherit;
+    height: inherit;
+  }
+}

@@ -1,0 +1,11 @@
+<div class="flex flex-column gap-3">
+  <div>
+    <ng-content></ng-content>
+  </div>
+  <div>
+    <app-button
+      [label]="confirmLabel"
+      (btnClick)="onSave()"
+    ></app-button>
+  </div>
+</div>

@@ -1,0 +1,65 @@
+:root {
+  /* Primary Colors */
+  --my-color-primary-50: #f3f8fa;
+  --my-color-primary-100: #e6f2f5;
+  --my-color-primary-200: #c1dee7;
+  --my-color-primary-300: #9bcad8;
+  --my-color-primary-400: #51a2ba;
+  --my-color-primary-500: #067a9d;
+  --my-color-primary-600: #056e8d;
+  --my-color-primary-700: #055c76;
+  --my-color-primary-800: #04495e;
+  --my-color-primary-900: #033c4d;
+
+  /* Theme Colors */
+  --my-color-primary-light: var(--my-color-primary-400);
+  --my-color-primary: var(--my-color-primary-500);
+  --my-color-primary-dark: var(--my-color-primary-800);
+
+  --my-font-color-default: #333;
+  --my-font-color-secondary: #6c757d;
+  --my-color-default-white: #fff;
+
+  /* Semantic Colors */
+  --my-success-light: #72b98c;
+  --my-success: #008033;
+  --my-success-dark: #004d1f;
+  --my-warn-light: #ffb66b;
+  --my-warn: #ff8800;
+  --my-warn-dark: #995200;
+  --my-error-light: #eb9999;
+  --my-error: #cc0000;
+  --my-error-dark: #7a0000;
+  --my-info-light: #99d6eb;
+  --my-info: #0099cc;
+  --my-info-dark: #005c7a;
+
+  /* Neutral Colors */
+  --my-neutral-50: #ffffff;
+  --my-neutral-100: #f3f4f6;
+  --my-neutral-200: #e5e7eb;
+  --my-neutral-300: #d1d5db;
+  --my-neutral-400: #9ca3af;
+  --my-neutral-500: #6b7280;
+  --my-neutral-600: #4b5563;
+  --my-neutral-700: #374151;
+  --my-neutral-800: #1f2937;
+  --my-neutral-900: #000000;
+
+  /* Font */
+  --my-font-default-size: 1.4rem;
+  --my-font-default-line-height: 1.8rem;
+  --my-font-title1-size: 2.6rem;
+  --my-font-title1-line-height: 3.2rem;
+  --my-font-title2-size: 2rem;
+  --my-font-title2-line-height: 2.6rem;
+}
+
+/* Breakpoints */
+$breakpoint-md: 700px;
+$breakpoint-sm: 450px;
+
+body.dark {
+  /* Theme Colors */
+  // Override theme colors here
+}

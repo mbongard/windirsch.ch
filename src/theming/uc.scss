@@ -1,0 +1,76 @@
+/**
+ * This file contains the utility classes for the theme
+ */
+
+@use 'mx';
+
+/**
+ * Background styles
+ */
+.my-bg-white {
+  @include mx.my-bg-white;
+}
+
+.my-bg-primary {
+  @include mx.my-bg-primary;
+}
+
+.my-bg-gray {
+  @include mx.my-bg-gray;
+}
+
+/**
+ * Font styles
+ */
+
+.my-fg-primary {
+  @include mx.my-fg-primary;
+}
+
+.my-fg-white {
+  @include mx.my-fg-white;
+}
+
+.my-fg-default {
+  @include mx.my-fg-default;
+}
+
+.my-fg-secondary {
+  @include mx.my-fg-secondary;
+}
+
+.my-f-link {
+  @include mx.my-f-link;
+}
+
+.my-f-default {
+  @include mx.my-f-default;
+}
+
+.my-f-bold {
+  @include mx.my-f-bold;
+}
+
+.my-f-title-1 {
+  @include mx.my-f-title-1;
+}
+
+.my-f-title-2 {
+  @include mx.my-f-title-2;
+}
+
+/**
+ * Normalize Semantic Markup Elements
+ */
+
+.my-normalize-button {
+  @include mx.my-normalize-button;
+}
+
+.my-normalize-ul {
+  @include mx.my-normalize-ul;
+}
+
+.my-normalize-a {
+  @include mx.my-normalize-a;
+}

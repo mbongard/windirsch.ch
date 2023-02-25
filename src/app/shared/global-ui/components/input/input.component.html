@@ -1,0 +1,12 @@
+<div class="input-wrapper">
+  <span class="p-float-label">
+    <input
+      pInputText
+      [formControl]="control"
+      [type]="inputType"
+      [autocomplete]="autocomplete"
+      id="input"
+    >
+    <label for="input" *ngIf="label">{{ label }}</label>
+  </span>
+</div>

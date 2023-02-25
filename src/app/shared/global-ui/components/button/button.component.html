@@ -1,0 +1,23 @@
+<button
+  [ngClass]="{
+    'success': type === 'success',
+    'danger': type === 'danger',
+    'plain': type === 'plain',
+    'header': type === 'header',
+    'flex-row-reverse': iconPlacement === 'right',
+    'rounded': rounded,
+    'w-full': fullWidth,
+    'large': size === 'large',
+    'x-large': size === 'x-large',
+    'shadow': shadow,
+    'icon-only': !label
+  }"
+  [disabled]="disabled"
+  (click)="btnClick.emit($event)"
+>
+  <fa-icon *ngIf="icon" [icon]="icon"></fa-icon>
+  <div class="image" *ngIf="imagePath && !icon">
+    <img [src]="imagePath" alt="">
+  </div>
+  <div *ngIf="label">{{label}}</div>
+</button>

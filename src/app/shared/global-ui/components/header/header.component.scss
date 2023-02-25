@@ -1,0 +1,36 @@
+@use 'src/theming/mx';
+
+$header-margin: 2rem;
+
+.header-wrap {
+  border-top: $header-margin solid transparent;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 4rem);
+  height: 10rem;
+  padding: 0 3rem;
+  margin: 0 $header-margin;
+  border-radius: 1rem;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-right: 0;
+}
+
+::ng-deep .header-theme-toggle {
+  &.light-theme button {
+    color: #f9d71c;
+  }
+
+  &.dark-theme button {
+    background-color: #f9d71c;
+    color: var(--my-color-primary);
+  }
+}
